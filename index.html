@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=contain">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./assets/css/general/reset.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/grid/grid.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/general/general.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/pages/dashboard.css" type="text/css">
+    
+    <link rel="shortcut icon" href="./assets/img/logo/icons/icon-72x72.png" type="image/png">
+
+    <!-- Add Web App Manifest -->
+    <!-- <link rel="manifest" href="manifest.json"> -->
+
+    <!-- Define color theme -->
+    <meta name="theme-color" content="#F5E8B7">
+    <meta name="msapplication-navbutton-color" content="#000000">
+    <meta name="msapplication-starturl" content="./index.html">
+
+    <!-- Apple -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="MySociety">
+    <meta name="application-name" content="MySociety">
+    <meta name="apple-mobile-web-app-title" content="MySociety">
+
+    <!-- Define icons -->
+    <link rel="icon" sizes="192x192" href="./assets/img/logo/icons/icon-192x192.png">
+    <link rel="icon" sizes="128x128" href="./assets/img/logo/icons/icon-128x128.png">
+    <link rel="apple-touch-icon" sizes="128x128" href="./assets/img/logo/iconsicon-128x128.png">
+    <link rel="apple-touch-icon-precomposed" sizes="128x128" href="./assets/img/logo/icons/icon-128x128.png">
+
+    <!-- Iphone splashscreens -->
+    <link rel="apple-touch-startup-image" href="./assets/splashscreens/iphone5_splash.svg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" />
+    <link rel="apple-touch-startup-image" href="./assets/splashscreens/iphone6_splash.svg" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" />
+    <link rel="apple-touch-startup-image" href="./assets/splashscreens/iphoneplus_splash.svg" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" />
+    <link rel="apple-touch-startup-image" href="./assets/splashscreens/iphonex_splash.svg" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" />
+    <!-- <script>
+        // This is the service worker with the Cache-first network
+        // Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
+  
+        // Check compatibility for the browser we're running this in
+        if ("serviceWorker" in navigator) {
+          if (navigator.serviceWorker.controller) {
+            console.log("[PWA Builder] active service worker found, no need to register");
+          } else {
+            // Register the service worker
+            navigator.serviceWorker
+              .register("./service-worker.js", {
+                scope: "./"
+              })
+              .then(function (reg) {
+                console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
+              });
+          }
+        }
+      </script> -->
+</head>
+<body>
+    <header></header>
+    <main class="container"> 
+        <div class="row">
+            <section class="col-6">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ville</th>
+                            <th>Spot</th>
+                            <th>Waterman</th>
+                            <th>date</th>
+                            <th>Heure de début</th>
+                            <th>Heure de fin</th>
+                            <th>Couleur de l'eau</th>
+                            <th>Déchets dans l'eau</th>
+                            <th>Habitudes</th>
+                            <th>Baigneurs</th>
+                            <th>Pratiques nautiques</th>
+                            <th>Bateaux</th>
+                            <th>Remarques</th>
+                        </tr>
+                    </thead>
+                    <tbody id="bodyDatas">
+
+                    </tbody>
+                </table>
+            </section>
+        </div>   
+    </main>
+    <footer></footer>
+    <script src="./assets/js/pages/dashboard.js"></script>
+</body>
+</html>
