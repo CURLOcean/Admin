@@ -1,0 +1,227 @@
+@import '../general/variable.scss';
+
+body{
+    display: flex;
+    background-color:$aliceBlue ;
+}
+header{
+    width: 250px;
+    height: 100vh;
+    border-radius: 0px 15px 15px 0px;
+    background-color: $white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .content{
+        margin: 0 auto 0;
+        .profil-img{
+            margin: 0 auto 10px;
+            img{
+                display: block;
+                margin: 0 auto;
+                clip-path: circle(50%);
+            }
+        }
+        .name{
+            font-weight: 600;
+font-size: 24px;
+color: $darkBlue;
+        }
+        .nav{
+            margin-top: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a{
+                display: flex;
+                align-items: center;
+                margin-bottom: 30px;
+                
+                font-weight: 500;
+                font-size: 16px;
+                color: $darkBlue;
+                img{
+                    display: block;
+                    width: 30px;
+                    margin-right: 20px;
+                }
+                &.active{
+                    color: $corail;
+                }
+            }
+        }
+        .logout{
+           a{
+            font-weight: 500;
+            font-size: 16px;
+            text-decoration : underline;
+            color: $darkBlue;
+           }
+        }
+    }
+}
+main{
+    width: calc(100% - 250px);
+    height: 100vh;
+    padding: 0 40px 0;
+    margin-left: 250px;
+    overflow-y: scroll;
+    padding-bottom: 30px;
+}
+.flex-fix{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -24px;
+    img:first-of-type{
+        min-width: 100%;
+        display: block;
+    }
+    img:nth-of-type(2){
+        width: 50%;
+        display: block;
+    }
+    img:nth-of-type(3){
+        width: 50%;
+        display: block;
+    }
+}
+
+.userData{
+    background-color: $white;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    .table{
+        width: 100%;
+        border-collapse: collapse;
+        .head{
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 10px;
+            .th{
+                width: calc(100% / 8);
+                font-weight: 600;
+                font-size: 16px;
+                color: $darkBlue;
+                padding: 0;
+                &:nth-of-type(1){
+                    max-width: 140px;
+                    width: 18.18%;
+                }
+                &:nth-of-type(2){
+                    max-width: 80px;
+                    width: 10.39%;
+                    text-align: center;
+                }
+                &:nth-of-type(3){
+                    max-width: 100px;
+                    width: 12.99%;
+                    text-align: center;
+                }
+                &:nth-of-type(4){
+                    max-width: 110px;
+                    width: 14.29%;
+                    text-align: center;
+                }
+                &:nth-of-type(5){
+                    max-width: 90px;
+                    width: 11.69%;
+                    text-align: center;
+                }
+                &:nth-of-type(6){
+                    max-width: 90px;
+                    width: 11.69%;
+                    text-align: center;
+                }
+                &:nth-of-type(7){
+                    max-width: 160px;
+                    width: 10.78%;
+                    text-align: center;
+                }
+            }
+        }
+        .datas{
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid #C9D8F0;
+            .td{
+                width: calc(100% / 8);
+                padding: 15px 0;
+                font-weight: 500;
+                font-size: 16px;
+                color: $darkBlue;
+                &:nth-of-type(1){
+                    max-width: 140px;
+                    width: 18.18%;
+                }
+                &:nth-of-type(2){
+                    max-width: 80px;
+                    width: 10.39%;
+                    text-align: center;
+                }
+                &:nth-of-type(3){
+                    max-width: 100px;
+                    width: 12.99%;
+                    display: flex;
+                    justify-content: center;
+                    img{
+                        height: 32px;
+                        &+img{
+                            margin-left: 30px;
+                        }
+                    }
+                }
+                &:nth-of-type(4){
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    max-width: 110px;
+                    width: 14.29%;
+                    img{
+                        height: 32px;
+                        margin-bottom: 5px;
+                        &:nth-of-type(2n){
+                            margin-left: 25px;
+                        }
+                    }
+                }
+                &:nth-of-type(5){
+                    max-width: 90px;
+                    width: 11.69%;
+                    text-align: center;
+                }
+                &:nth-of-type(6){
+                    max-width: 90px;
+                    width: 11.69%;
+                    text-align: center;
+                }
+                &:nth-of-type(7){
+                    max-width: 160px;
+                    width: 10.78%;
+                    text-align: center;
+                    display: flex;
+                    justify-content: space-between;
+                    div{
+                        img{
+                            display: block;
+                             height: 25px;
+                        }
+                        span{
+                            font-weight: 500;
+                            font-size: 12px;
+                            color: $darkBlue;
+                        }
+                    }
+                }
+            }
+            .note{
+                min-width: 100%;
+            }
+        }
+        
+    }
+}

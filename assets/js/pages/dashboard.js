@@ -18,31 +18,27 @@ document.addEventListener('DOMContentLoaded', ()=> {
     const createTr = (datas) =>{
         for(let data of datas){
             let habits= '';
-            let boats =''
+            let boats ='';
+            let time = data.startHour + "<br>" + data.endHour;
+            let water = `<img src="./assets/img/${data.waterColor}.svg" alt="">` + `<img src="./assets/img/${data.waterWaste}.svg" alt="">`;
             for(let habit of data.habits){
-                habits += habit + ',';
+                habits += `<img src="./assets/img/${habit}.svg" alt="">`;
             }
 
             for(let boat of data.attendanceBoat){
-                boats += boat.name + ':' + boat.number + '<br>';
+                boats += `<div><img src="./assets/img/${boat.name}.svg" alt=""><span>${boat.number}</span></div>`;
             }
 
             tbody.innerHTML += `
-            <tr>
-                <td>${data.city}</td>
-                <td>${data.spot}</td>
-                <td>${data.user}</td>
-                <td>${data.date}</td>
-                <td>${data.startHour}</td>
-                <td>${data.endHour}</td>
-                <td>${data.waterColor}</td>
-                <td>${data.waterWaste}</td>
-                <td>${habits}</td>
-                <td>${data.attendanceBathers}</td>
-                <td>${data.attendanceAthletic}</td>
-                <td>${boats}</td>
-                <td>${data.note}</td>
-            </tr>
+            <div class="datas">
+                <div class="td">${data.user}</div>
+                <div class="td">${time}</div>
+                <div class="td">${water}</div>
+                <div class="td">${habits}</div>
+                <div class="td">${data.attendanceBathers}</div>
+                <div class="td">${data.attendanceAthletic}</div>
+                <div class="td">${boats}</div>
+            </div>
             `; 
         }
     }

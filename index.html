@@ -28,10 +28,10 @@
     <meta name="apple-mobile-web-app-title" content="MySociety">
 
     <!-- Define icons -->
-    <link rel="icon" sizes="192x192" href="./assets/img/logo/icons/icon-192x192.png">
+    <!-- <link rel="icon" sizes="192x192" href="./assets/img/logo/icons/icon-192x192.png">
     <link rel="icon" sizes="128x128" href="./assets/img/logo/icons/icon-128x128.png">
     <link rel="apple-touch-icon" sizes="128x128" href="./assets/img/logo/iconsicon-128x128.png">
-    <link rel="apple-touch-icon-precomposed" sizes="128x128" href="./assets/img/logo/icons/icon-128x128.png">
+    <link rel="apple-touch-icon-precomposed" sizes="128x128" href="./assets/img/logo/icons/icon-128x128.png"> -->
 
     <!-- Iphone splashscreens -->
     <link rel="apple-touch-startup-image" href="./assets/splashscreens/iphone5_splash.svg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" />
@@ -60,34 +60,45 @@
       </script> -->
 </head>
 <body>
-    <header></header>
-    <main class="container"> 
-        <div class="row">
-            <section class="col-6">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Ville</th>
-                            <th>Spot</th>
-                            <th>Waterman</th>
-                            <th>date</th>
-                            <th>Heure de début</th>
-                            <th>Heure de fin</th>
-                            <th>Couleur de l'eau</th>
-                            <th>Déchets dans l'eau</th>
-                            <th>Habitudes</th>
-                            <th>Baigneurs</th>
-                            <th>Pratiques nautiques</th>
-                            <th>Bateaux</th>
-                            <th>Remarques</th>
-                        </tr>
-                    </thead>
-                    <tbody id="bodyDatas">
+    <header>
+      <ul class="content">
+        <li class="profil-img"><img src="./assets/img/profil.jpg" alt=""></li>
+        <li class="name">Marc Valmassoni</li>
+        <li class="nav">
+          <ul>
+            <li><a href="" class="active"><img src="./assets/img/data.svg" alt="">Data Analyse</a></li>
+            <li><a href=""><img src="./assets/img/content.svg" alt="">Gestion du contenu</a></li>
+            <li><a href=""><img src="./assets/img/message.svg" alt="">Messages</a></li>
+            <li><a href=""><img src="./assets/img/params.svg" alt="">Paramètres</a></li>
+          </ul>
+        </li>
+        <li class="logout">
+          <a href="">Déconnexion</a>
+        </li>
+      </ul>
+    </header>
+    <main> 
+      <section class="flex-fix">
+        <img src="./assets/img/meteo.svg" alt="">
+        <img src="./assets/img/waves.png" alt="">
+        <img src="./assets/img/water.png" alt="">
+      </section>
+      <section class="userData">
+                <div class="table">
+                      <div class="head">
+                          <div class="th">Waterman</div>
+                          <div class="th">temps</div>
+                          <div class="th">L'eau</div>
+                          <div class="th">Habitudes</div>
+                          <div class="th">Baigneurs</div>
+                          <div class="th">PAN</div>
+                          <div class="th">Bateaux</div>
+                      </div>
+                    <div id="bodyDatas">
 
-                    </tbody>
-                </table>
-            </section>
-        </div>   
+                    </div>
+                </div>
+              </section>
     </main>
     <footer></footer>
     <script src="./assets/js/pages/dashboard.js"></script>
