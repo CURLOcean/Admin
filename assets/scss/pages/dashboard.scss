@@ -72,6 +72,14 @@ main{
     overflow-y: scroll;
     padding-bottom: 30px;
 }
+.flex-end{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 -24px -25px;
+    img{
+        height: 80px;
+    }
+}
 .flex-fix{
     display: flex;
     flex-wrap: wrap;
